@@ -5,6 +5,21 @@ spectaql:
   #   - ./frontend/web/svg/logo_black.svg
   displayAllServers: true
   oneFile: true
+
+  # Optional path to your logo image which will be used as your logo in output
+  logoFile: "/home/edijs/Downloads/spectaql-base/build/images/randomLogo2.jpg"
+
+  # Optional URL to use as your logo. This should not be used with logoFile
+  # If used with logoFile, this will take pecedende over the logoFile
+  logoUrl: "https://cdn.prod.website-files.com/650b587646f6e012b0a00223/68c414d3b55a2e961f70cb2a_What%20is%20logo%20lockup%202.webp"
+
+  # Control the height of your logo here
+  # Default: None; No "height" property will be set on the logo
+  logoHeightPx: 50
+
+  # Optional boolean that sorts operations/types/directives alphabetically
+  # Default: false
+  sortAlphabetically: false
  
 introspection:
   schemaFile: ./schema.gql

@@ -3,8 +3,16 @@
   <div id="sidebar">
     <div class="sidebar-top-container">
       <div id="logo">
-        <img class="logo-light" src="/svg/logo_black.svg" title="{{info.title}}" />
-        <img class="logo-dark" src="/svg/logo.svg" title="{{info.title}}" />
+        {{#if logoData }}
+          <img class="logo-dark" src="data:image/png;base64,{{logoData}}" title="{{info.title}}"/>
+          <img class="logo-light" src="data:image/png;base64,{{logoData}}" title="{{info.title}}"/>
+        {{else if logoUrl}}
+          <img class="logo-dark" src="{{logoUrl}}" title="{{info.title}}"/>
+          <img class="logo-light" src="{{logoUrl}}" title="{{info.title}}"/>
+        {{else if logoImageName}}
+          <img class="logo-dark" src="images/{{logoImageName}}" title="{{info.title}}"/>
+          <img class="logo-light" src="images/{{logoImageName}}" title="{{info.title}}"/>
+        {{/if}}
       </div>
       <button class="close-button" type="button">
         <span aria-hidden="true">×</span>

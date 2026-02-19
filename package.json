@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/spectaql spectaql-config.yml"
+    "build": "./node_modules/.bin/spectaql spectaql-config.yml",
+    "dev": "./node_modules/.bin/spectaql -D spectaql-config.yml"
   },
   "author": "",
   "license": "ISC",

@@ -27,7 +27,12 @@ $container-padding-mobile: $content-padding;
 $container-padding-tablet: 24px;
 $container-padding-desktop: 32px;
 $container-padding-operation: 60px;
-$logo-height: 50px;
+
+$logo-height: getLogoHeightPx();
+@if $logo-height == false {
+  $logo-height: 0px;
+}
+
 $search-input-container-height: 50px;
 $drawer-size: 300px;
 $drawer-size-desktop-large: 355px;
@@ -350,10 +355,13 @@ html {
       color: var(--spectaql-link-color-hover);
     }
   }
+  
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   #logo img {
-    height: $logo-height;
-
     &.logo-light {
       display: none;
     }
