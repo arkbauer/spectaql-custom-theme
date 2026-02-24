@@ -10,6 +10,12 @@
 
         if (savedTheme !== null) {
             applyTheme(savedTheme);
+        } else {
+            let systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            let initialTheme = systemPrefersDark ? THEME_DARK : THEME_LIGHT;
+
+            applyTheme(initialTheme);
+            setThemeCookieValue(initialTheme);
         }
     }
 
