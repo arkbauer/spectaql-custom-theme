@@ -55,19 +55,19 @@
 
         <div class="example-section example-section-is-code operation-query-example">
           <h5>Query</h5>
-          {{printGraphQL (filterExampleQuery (firstTruthy query mutation) name)}}
+          {{printGraphQL (firstTruthy query mutation)}}
         </div>
 
         {{#if variables}}
           <div class="example-section example-section-is-code operation-variables-example">
             <h5>Variables</h5>
-            {{printJSON (filterExampleVariables variables name)}}
+            {{printJSON variables}}
           </div>
         {{/if}}
         {{#if response.data}}
           <div class="example-section example-section-is-code operation-response-example">
             <h5>Response</h5>
-            {{printJSON (filterExampleResponse response.data name)}}
+            {{printJSON response.data}}
           </div>
         {{/if}}
       {{/if}}
