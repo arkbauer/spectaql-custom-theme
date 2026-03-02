@@ -23,7 +23,7 @@ spectaql:
  
 introspection:
   schemaFile: ./schema.gql
-  dynamicExamplesProcessingModule: ./spectaql/dynamicExamples.js
+  # dynamicExamplesProcessingModule: ./spectaql/dynamicExamples.js
   queryNameStrategy: capitalizeFirst
 
   # Default fieldExpansionDepth for all queries/mutations.
