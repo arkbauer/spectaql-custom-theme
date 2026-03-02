@@ -3,7 +3,6 @@
  */
 
 const { Microfiber: IntrospectionManipulator } = require('microfiber')
-const fieldExpansionDepthConfig = require('../fieldExpansionDepthConfig')
 
 // Client-side (executable) directive locations - https://spec.graphql.org/draft/#ExecutableDirectiveLocation
 const clientSideLocations = new Set([
@@ -74,12 +73,12 @@ module.exports = ({
     const queryType = introspectionManipulator.getQueryType()
     const mutationType = introspectionManipulator.getMutationType()
     const queryItems = queryType.fields.map((query) => {
-        const customDepth = fieldExpansionDepthConfig.queries[query.name]
+        const customDepth = allOptions.introspection.customFieldExpansionDepth?.[`Query.${query.name}`]
         return addCustomFieldExpansionDepthData({...query, isQuery: true}, customDepth)
     })
 
     const mutationItems = mutationType.fields.map((mutation) => {
-        const customDepth = fieldExpansionDepthConfig.mutations[mutation.name]
+        const customDepth = allOptions.introspection.customFieldExpansionDepth?.[`Mutation.${mutation.name}`]
         return addCustomFieldExpansionDepthData({...mutation, isMutation: true}, customDepth)
     })
 

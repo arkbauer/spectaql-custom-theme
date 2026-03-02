@@ -27,9 +27,14 @@ introspection:
   queryNameStrategy: capitalizeFirst
 
   # Default fieldExpansionDepth for all queries/mutations.
-  # For custom per-query/mutation values, edit spectaql/fieldExpansionDepthConfig.js
-  # The custom depth logic is handled by the theme's data/index.js.
+  # The custom depth logic is handled by customFieldExpansionDepth setting and the theme's data/index.js.
   fieldExpansionDepth: 3
+
+  # Sets custom fieldExpansionDepth to seperate queries or mutations
+  customFieldExpansionDepth:
+    Query.categories: 1
+    Query.items: 5
+    Mutation.returnOrderCreate: 2
 
 spectaqlDirective:
   enable: true
