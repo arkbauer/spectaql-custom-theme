@@ -10,7 +10,9 @@
     {{>scripts/scroll-spy-script}}
     {{>scripts/code-copy-script}}
     {{>scripts/sidebar-search-script}}
-    {{>scripts/mermaid-script}}
+    {{#if allOptions.mermaidPath}}
+      {{>scripts/mermaid-script}}
+    {{/if}}
     {{>scripts/code-formatting-script}}
     {{>scripts/heading-anchor-script}}
   </body>

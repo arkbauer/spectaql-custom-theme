@@ -20,6 +20,10 @@ spectaql:
   # Optional boolean that sorts operations/types/directives alphabetically
   # Default: false
   sortAlphabetically: false
+
+  # Optional path to your mermaid file, if you need it
+  # Defaut: none
+  # mermaidPath: "https://cdn.jsdelivr.net/npm/mermaid@11.12.3/dist/mermaid.min.js"
  
 introspection:
   schemaFile: ./schema.gql
