@@ -24,7 +24,24 @@ spectaql:
   # Optional path to your mermaid file, if you need it
   # Defaut: none
   # mermaidPath: "https://cdn.jsdelivr.net/npm/mermaid@11.12.3/dist/mermaid.min.js"
- 
+
+  # Optional variables to customize default themes
+  # Light theme
+  themeVariables:
+    lightTheme:
+      --spectaql-background: "red"
+      --spectaql-text-color: "purple"
+      --spectaql-code-copy-bg: "blue"
+
+    # Dark theme
+    darkTheme:
+      --spectaql-background: "black"
+      --spectaql-text-color: "#921028"
+      --spectaql-code-copy-bg: "red"
+      --admonition-warning-bg: "#456302"
+      --text-highlight-color: "purple"
+      --hljs-background: "green"
+
 introspection:
   schemaFile: ./schema.gql
   # dynamicExamplesProcessingModule: ./spectaql/dynamicExamples.js
