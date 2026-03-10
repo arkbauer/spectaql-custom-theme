@@ -64,11 +64,34 @@ extensions:
   graphqlScalarExamples: true
   
 servers:
-  - url: https://www.3rpms.de/graphql
-    description: Production server
+    - url: https://yoursite.com/graphql
+      description: Production Server
+      # Indicates to use this server's URL as the typical GraphQL request base in the documentation
+      # If no server entries have this indicator, the first server's URL will be used.
+      # If no server entries are defined at all, the Introspection URL will be used.
+      production: true
+      # A place to list any Headers for your GraphQL API calls
+      headers:
+        - name: Authorization
+          example: Bearer <YOUR_TOKEN_HERE>
+          comment: Your API token from the dashboard. Must be included in all API calls.
+    - url: https://yoursite.com/graphql
+      description: Production Server
+      # Indicates to use this server's URL as the typical GraphQL request base in the documentation
+      # If no server entries have this indicator, the first server's URL will be used.
+      # If no server entries are defined at all, the Introspection URL will be used.
+      production: true
+      # A place to list any Headers for your GraphQL API calls
+      headers:
+        - name: Authorization
+          example: Bearer <YOUR_TOKEN_HERE>
+          comment: Your API token from the dashboard. Must be included in all API calls.
+#   - url: https://www.3rpms.de/graphql
+#     description: Production server
+#     production: true
 
-  - url: https://demo.3rpms.de/graphql
-    description: Sandbox server
+#   - url: https://demo.3rpms.de/graphql
+#     description: Sandbox server
 
 info:
   title: 3RPMS General API Integration Knowledge Base
@@ -76,6 +99,8 @@ info:
     Welcome to the 3RPMS GraphQL API documentation. This API allows you to interact with the 3RPMS Property Management System.
   
     3RPMS GraphQL API is based on GraphQL. Visit https://graphql.org/ to learn more about the protocol.
+
+  x-url: https://www.3rpms.de/graphql
 
   x-introItems:
     - title: Overview
