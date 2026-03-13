@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/spectaql spectaql-config.yml",
+    "build": "./node_modules/.bin/spectaql spectaql-config.example.yml",
     "dev": "./node_modules/.bin/spectaql -D spectaql-config.yml"
   },
   "author": "",

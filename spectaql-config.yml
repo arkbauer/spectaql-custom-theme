@@ -18,7 +18,7 @@ spectaql:
   logoHeightPx: 50
 
   # Optional boolean that sorts operations/types/directives alphabetically
-  # Default: false
+  # Default: true
   sortAlphabetically: false
 
   # Optional path to your mermaid file, if you need it
@@ -44,7 +44,7 @@ spectaql:
 
 introspection:
   schemaFile: ./schema.gql
-  # dynamicExamplesProcessingModule: ./spectaql/dynamicExamples.js
+  dynamicExamplesProcessingModule: ./dynamicExamplesProcessingModule.example.js
   queryNameStrategy: capitalizeFirst
 
   # Default fieldExpansionDepth for all queries/mutations.

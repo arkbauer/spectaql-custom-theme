@@ -96,7 +96,7 @@ module.exports = ({
 
     const directives = introspectionResponse.__schema.directives
 
-    const sortAlphabetically = allOptions.spectaql?.sortAlphabetically ?? false;
+    const sortAlphabetically = allOptions.spectaql?.sortAlphabetically ?? true;
     if (sortAlphabetically) {
         queryItems.sort((a, b) => a.name.localeCompare(b.name));
         mutationItems.sort((a, b) => a.name.localeCompare(b.name));
