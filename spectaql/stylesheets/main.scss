@@ -524,7 +524,6 @@ html {
   #introduction,
   #outro {
     position: relative;
-    padding-bottom: calc($container-padding-operation / 2);
     background: var(--spectaql-background);
 
     .introduction-item,
@@ -536,6 +535,10 @@ html {
 
       &:first-of-type {
         border-top: none;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
 
       details {
@@ -569,6 +572,8 @@ html {
   }
 
   #introduction {
+    padding-bottom: calc($container-padding-operation / 2);
+
     .example-section {
       margin-bottom: $content-padding;
 
@@ -580,6 +585,10 @@ html {
 
   #welcome {
     .doc-copy {
+      p:last-child {
+        margin-bottom: $content-padding;
+      }
+
       @media (min-width: $size-content-break) {
         width: 50%;
       }
