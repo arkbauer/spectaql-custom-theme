@@ -44,7 +44,7 @@ spectaql:
 
 introspection:
   schemaFile: ./schema.gql
-  dynamicExamplesProcessingModule: ./dynamicExamplesProcessingModule.example.js
+  dynamicExamplesProcessingModule: ./dynamicExamplesProcessingModule.js
   queryNameStrategy: capitalizeFirst
 
   # Default fieldExpansionDepth for all queries/mutations.

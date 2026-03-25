@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/spectaql spectaql-config.example.yml",
+    "build": "./node_modules/.bin/spectaql spectaql-config.yml",
     "dev": "./node_modules/.bin/spectaql -D spectaql-config.yml"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "spectaql": "^3.0.6"
+    "spectaql": "^3.0.6",
+    "spectaql-custom-theme": "git+https://github.com/arkbauer/spectaql-custom-theme.git#theme"
   }
 }
