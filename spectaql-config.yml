@@ -104,47 +104,11 @@ info:
 
   x-introItems:
     - title: Overview
-      file: spectaql/documentation/overview.md
+      file: documentation/overview.md
 
-    - title: Changelog
-      file: spectaql/documentation/changelog.md
 
-    - title: GraphQL API
-      items:
-        - title: Why GraphQL?
-          file: spectaql/documentation/graphql-api/why_graphql.md
-
-        - title: Rate Limiting
-          file: spectaql/documentation/graphql-api/rate_limiting.md
-
-        - title: Filters
-          file: spectaql/documentation/graphql-api/filters.md
-
-        - title: Pagination
-          file: spectaql/documentation/graphql-api/pagination.md
-
-        - title: Errors
-          file: spectaql/documentation/graphql-api/errors.md
-
-        - title: Extra features
-          file: spectaql/documentation/graphql-api/extra_features.md
-
-  x-outroItems: #The documentation doesn't contain this
+  x-outroItems:
     - title: Webhooks
       items:
         - title: Overview
-          file: spectaql/documentation/webhooks/webhooks_overview.md
-
-        - title: Troubleshooting
-          file: spectaql/documentation/webhooks/webhooks_troubleshooting.md
-
-    - title: Guides
-      items:
-        - title: Using Room Access Keys
-          file: spectaql/documentation/guides/room_access_keys.md
-
-        - title: External Sales API
-          file: spectaql/documentation/guides/external_sales_api.md
-
-        - title: Rates & Restrictions API
-          file: spectaql/documentation/guides/rates_and_restrictions_api.md
+          file: documentation/webhooks/webhooks_overview.md
