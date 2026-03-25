@@ -1,16 +1,4 @@
 {
-  "name": "spectaql-base",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "./node_modules/.bin/spectaql spectaql-config.example.yml",
-    "dev": "./node_modules/.bin/spectaql -D spectaql-config.yml"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "spectaql": "^3.0.6",
-    "spectaql-custom-theme": "git+https://github.com/arkbauer/spectaql-custom-theme.git#theme"
-  }
+  "name": "spectaql-custom-theme",
+  "version": "1.0.0"
 }
