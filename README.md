@@ -5,7 +5,7 @@ Branch `main` is for development. Branch `theme` is SpectaQL custom theme to be 
 When making changes in `main` branches `spectaql` folder you must sync them with `theme` branch by running this command in `theme` branch: 
 
 ```sh
-git checkout main -- spectaql
+git checkout origin/main -- spectaql
 ```
 
 # Usage
