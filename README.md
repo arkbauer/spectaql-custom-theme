@@ -25,5 +25,9 @@ Run package install command in your terminal and it'll add the packages `theme` 
 Update your `specataql-config.yml` file to point to installed custom theme:
 
 ```yml
-themeDir: pathToNodeModules/spectaql-custom-theme/spectaql
+themeDir: <path-to-node-modules>/spectaql-custom-theme/spectaql
 ```
+
+### You can view all of the custom features [here](https://github.com/arkbauer/spectaql-custom-theme/blob/theme/README.md). 
+
+> **NOTE**: If you provide logo, then there is a breaking change for [setting up logo](https://github.com/arkbauer/spectaql-custom-theme/blob/theme/README.md#setting-up-logo) that you must adhear to.
