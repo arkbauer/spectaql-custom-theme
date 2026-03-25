@@ -1,0 +1,61 @@
+spectaql:
+  targetDir: ./build
+  themeDir: ./spectaql
+  oneFile: true
+
+  logoUrl: "https://cdn.prod.website-files.com/650b587646f6e012b0a00223/68c414d3b55a2e961f70cb2a_What%20is%20logo%20lockup%202.webp"
+  logoHeightPx: 50
+
+  # Optional boolean that defines sorting order of operations/types/directives
+  # Default: true
+  sortAlphabetically: false
+
+  # Optional path to your mermaid file, if you're usimg mermaid charts in x-introItems or x-outroItems
+  # Defaut: none
+  mermaidPath: "https://cdn.jsdelivr.net/npm/mermaid@11.12.3/dist/mermaid.min.js"
+
+  # Optional variables to customize theme
+  themeVariables:
+    lightTheme:
+      --spectaql-background: "red"
+      --admonition-warning-bg: "cyan"
+      --text-highlight-color: "#7236d1"
+      --hljs-background: "blue"
+
+    darkTheme:
+      --spectaql-background: "black"
+      --admonition-warning-bg: "#456302"
+      --text-highlight-color: "purple"
+      --hljs-background: "green"
+
+introspection:
+  schemaFile: ./schema.gql
+  dynamicExamplesProcessingModule: ./dynamicExamplesProcessingModule.example.js
+
+  # Sets custom fieldExpansionDepth to seperate queries or mutations
+  customFieldExpansionDepth:
+    Query.items: 5
+    Mutation.returnOrderCreate: 2
+  
+servers:
+  - url: https://www.its-not-a-bug-its-a-feature.de/graphql
+
+info:
+  title: Its Not A Bug Its A Feature General API Integration Knowledge Base
+  description: |
+    Welcome to the Its Not A Bug Its A Feature GraphQL API documentation. This API allows you to interact with the Its Not A Bug Its A Feature Property Management System.
+
+    Everything behaves exactly as intended. The unexpected responses? Features.
+    The timeout errors? A mindfulness moment. The missing fields? Minimalist design.
+
+    Its Not A Bug Its A Feature GraphQL API is based on GraphQL. Visit https://graphql.org/ to learn more about the protocol.
+
+  x-introItems:
+    - title: Overview
+      file: documentation/overview.md
+
+  x-outroItems:
+    - title: Webhooks
+      items:
+        - title: Overview
+          file: documentation/webhooks/webhooks_overview.md
