@@ -39,57 +39,59 @@ Both themes support the same set of color variables.
 #### Available Color Variables
 
 ```
---spectaql-background
---spectaql-background-subtle
---spectaql-text-color
---spectaql-text-color-subtle
---spectaql-link-color
---spectaql-link-color-hover
---spectaql-border-color
---spectaql-border-color-subtle
---spectaql-code-background
---spectaql-code-background-subtle
---spectaql-code-text-color
---spectaql-sidebar-background
---spectaql-examples-background
---spectaql-scrollbar-thumb
---spectaql-table-stripe
---spectaql-nav-group-title
---spectaql-group-name-bg
---spectaql-group-name-bg-hover
---spectaql-group-name-color
---spectaql-code-copy-bg
---spectaql-code-copy-bg-hover
---spectaql-code-copy-color
---spectaql-code-copy-color-hover
---spectaql-code-copy-success
---admonition-warning-bg
---admonition-warning-border
---admonition-warning-title-color
---admonition-warning-title-bg
---admonition-info-bg
---admonition-info-border
---admonition-info-title-color
---admonition-info-title-bg
---admonition-danger-bg
---admonition-danger-border
---admonition-danger-title-color
---admonition-danger-title-bg
---text-highlight-bg
---text-highlight-color
---hljs-background
---hljs-color
---hljs-comment
---hljs-keyword
---hljs-name
---hljs-literal
---hljs-string
---hljs-attr
---hljs-number
---hljs-title
---hljs-built-in
---hljs-code
+--spectaql-background // Primary color for the documentations background
+--spectaql-background-subtle // Theme toggle button, endpoints and examples
+--spectaql-text-color // Primary color for documentations text
+--spectaql-text-color-subtle // Nav group titles, labels, section headings, and placeholders
+--spectaql-link-color // Primary accent color for links, active states, and focus indicators
+--spectaql-link-color-hover // Hover state for all interactive links and elements
+--spectaql-border-color // Primary border for dividers, toggles, and component edges
+--spectaql-border-color-subtle // Subtle dividers within tables and argument lists
+--spectaql-code-background // Background for all code blocks
+--spectaql-code-background-subtle // Background for inline code inside tabbed content
+--spectaql-code-text-color // Code block text color
+--spectaql-sidebar-background // Background for sidebar and group headings
+--spectaql-examples-background // Background for the examples panel
+--spectaql-scrollbar-thumb // Custom scrollbar thumb color
+--spectaql-table-stripe // Striped row color for tables
+--spectaql-nav-group-title // Nav group title text color
+--spectaql-group-name-bg // Background for operation/definition group name tags
+--spectaql-group-name-bg-hover // Hover background for operation/definition group name tags
+--spectaql-group-name-color // Text color for operation/definition group name tags
+--spectaql-code-copy-bg // Background for copy button and search clear button
+--spectaql-code-copy-bg-hover // Hover background for copy button and search clear button
+--spectaql-code-copy-color // Icon color for copy button
+--spectaql-code-copy-color-hover // Icon hover color for copy button
+--spectaql-code-copy-success // Checkmark icon color after successful copy
+--admonition-warning-bg // Warning admonition background
+--admonition-warning-border // Warning admonition left border accent
+--admonition-warning-title-color // Warning admonition title text color
+--admonition-warning-title-bg // Warning admonition title background
+--admonition-info-bg // Info admonition background
+--admonition-info-border // Info admonition left border accent
+--admonition-info-title-color // Info admonition title text color
+--admonition-info-title-bg // Info admonition title background
+--admonition-danger-bg // Danger admonition background
+--admonition-danger-border // Danger admonition left border accent
+--admonition-danger-title-color // Danger admonition title text color
+--admonition-danger-title-bg // Danger admonition title background
+--text-highlight-bg // Inline text highlight background
+--text-highlight-color // Inline text highlight text color
+--hljs-background // Syntax highlighter block background
+--hljs-color // Syntax highlighter base text color
+--hljs-comment // Syntax highlighter comment and quote color
+--hljs-keyword // Syntax highlighter keyword and formula color
+--hljs-name // Syntax highlighter tag name and selector color
+--hljs-literal // Syntax highlighter literal value color
+--hljs-string // Syntax highlighter string and regex color
+--hljs-attr // Syntax highlighter attribute, variable, and type color
+--hljs-number // Syntax highlighter numeric value color
+--hljs-title // Syntax highlighter title, link, and meta color
+--hljs-built-in // Syntax highlighter built-in and class name color
+--hljs-code // Syntax highlighter inline code color
 ```
+
+You can check which variable a specific element is using via the `inspect` tool in the `style` section in your browser.
 
 #### Example Configuration
 
