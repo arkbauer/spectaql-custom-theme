@@ -10,11 +10,12 @@ git checkout origin/main -- spectaql
 
 # Usage
 
-Add dependency to your `package.json`:
+Add dependencies to your `package.json`:
 
 ```json
 {
     "dependencies": {
+        "spectaql": "3.0.9",
         "spectaql-custom-theme": "git+https://github.com/arkbauer/spectaql-custom-theme.git#theme"
     }
 }
@@ -31,5 +32,3 @@ themeDir: <path-to-node-modules>/spectaql-custom-theme/spectaql
 ### You can view all of the custom features [here](https://github.com/arkbauer/spectaql-custom-theme/blob/theme/README.md). 
 
 > **NOTE**: If you provide logo, then there is a breaking change for [setting up logo](https://github.com/arkbauer/spectaql-custom-theme/blob/theme/README.md#setting-up-logo) that you must adhear to.
-
->Compatible with **`SpectaQL 3.0.9`**.
